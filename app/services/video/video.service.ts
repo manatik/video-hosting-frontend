@@ -6,7 +6,7 @@ export const VIDEO = 'video'
 
 export const VideoService = {
 	async getAll() {
-		return axiosClassic.get<IVideo[]>(`/${VIDEO}`)
+		return axiosClassic.get<IVideo[]>(`/${VIDEO}/all`)
 	},
 	async getMostPopular() {
 		return axiosClassic.get<IVideo[]>(`/${VIDEO}/most-popular`)

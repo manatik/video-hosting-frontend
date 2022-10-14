@@ -6,9 +6,9 @@ export const USER = 'user'
 
 export const UserService = {
 	async getAll() {
-		return axiosClassic.get<IUser[]>(`/${USER}`)
+		return axiosClassic.get<IUser[]>(`/${USER}/all`)
 	},
 	async getUser(id: number) {
-		return axiosClassic.get<IUser[]>(`/${USER}/${id}`)
+		return axiosClassic.get<IUser>(`/${USER}/${id}`)
 	}
 }
